@@ -1,0 +1,12 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+df=pd.read_csv(r"C:/Users/Ibscai27.DGVC-MCA\Desktop/iris.csv1.csv")
+print(df.head())
+x=df["sepal_length"]
+y=df["sepal_width"]
+plt.xlabel("sepal length")
+plt.ylabel("sepal width")
+plt.title("line plot example")
+plt.plot(x,y)
+plt.savefig("sample.png")
+plt.show()
