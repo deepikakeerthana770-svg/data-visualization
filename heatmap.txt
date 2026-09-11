@@ -1,0 +1,7 @@
+sns.boxplot(
+    data=df,
+    x=df["cuisine_type"],
+    hue=df["rating"])
+
+df1=df.select_dtypes(include=["number"])
+sns.heatmap(df1.corr(),annot=True,cmap="Greens")
